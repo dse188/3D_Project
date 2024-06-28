@@ -591,7 +591,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  cc: {fileID: 1550098378}
+  rotationSpeed: 0
+  cc: {fileID: 0}
 --- !u!136 &1550098374
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -890,6 +891,8 @@ GameObject:
   - component: {fileID: 1975152717}
   - component: {fileID: 1975152721}
   - component: {fileID: 1975152722}
+  - component: {fileID: 1975152723}
+  - component: {fileID: 1975152724}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -999,13 +1002,44 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975152715}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a44ac688ee637a4e91aa5974b6727e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotationSpeed: 5
   cc: {fileID: 1975152721}
+--- !u!114 &1975152723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975152715}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4936f96f1b9c4c047bf6b14e4a720e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cc: {fileID: 1975152721}
+  speed: 5
+--- !u!114 &1975152724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975152715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c58083d064f094c85fc5689be163d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cc: {fileID: 1975152721}
+  cam: {fileID: 0}
+  speed: 6
+  turnSmoothTime: 0.1
 --- !u!1 &2031240071
 GameObject:
   m_ObjectHideFlags: 0
